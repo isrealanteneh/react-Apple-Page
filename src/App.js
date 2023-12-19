@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+// importing nav
+import OriginNav from "./component/OriginNav";
+// importing  OriginMain
+import OriginMain from "./component/OriginMain";
 
-function App() {
+// importing origin second
+import OriginSecond from "./component/OriginSecond";
+
+// importing OriginThird
+import OriginThird from "./component/OriginThird";
+// importing fotter
+import Fotter from "./component/Fotter";
+
+// app function component
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <OriginNav />
+      <OriginMain />
+      <OriginSecond />
+      <OriginThird />
+      <Fotter />
+    </>
   );
-}
+};
 
 export default App;
